@@ -1,0 +1,7 @@
+concurrent.futures
+requests
+threading
+sys
+time
+bs4
+colorama
