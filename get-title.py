@@ -21,7 +21,7 @@ def check_url(url):
 		res=session.get(url, timeout=1)
 		html=bs4.BeautifulSoup(res.text, "lxml")
 		t=html.title
-		print(Style.BRIGHT + Fore.WHITE + (url) + " : " + Fore.YELLOW + (t.text))
+		print(Style.BRIGHT + Fore.WHITE + (url) + " : " + Fore.YELLOW + (' '.join(t.text.split())))
 	except:
 		pass
 def itterate_urls(inputurl):
